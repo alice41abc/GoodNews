@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: inter;
+  background: rgb(251,254,255);
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.title{
+  display: Inline Block;
+  margin-left: 50px;
+  margin-top: 30px;
+  height: auto;
+  width: 250px
+}
+
+
+.all_news{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom:60px
+}
+
+.news{
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  border:0.5px dotted lightgrayx
+}
+
+.news > .news_title {
+  opacity:100%;
+  font: 18px "Roboto-medium";
+  padding-bottom: 10px;
+  font-weight: 2px;
+  transition: transform .9s;
+}
+
+.news > .news_title:hover{
+  opacity:1;
+  transform: scale(1.1);
+}
+
+.news > .news_date {
+  padding-left: 280px;
+  bottom: 20px;
+  position: absolute;
+  font-weight: 2px;
+  font: 13px "Roboto-regular";
+}
+
+.news > .news_picture {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  height: 160px;
+  width: auto;
+}
+
+.load{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.load img {
+  padding: 10px;
+}
+
+.load span {
+  font: 16px "PatrickHand";
+  color: #938d94;
+}
+
+.buttons{
+  /* margin-left:100%; */
+  position: absolute;
+  right: 0px;
+  margin-right: 20px;
+  width: 700px;
+  padding-top: 45px;
+}
+
+.button {
+  font: 18px "BebasNeue";
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(133, 48, 48);
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:active{
+  color: rgb(196, 174, 174);
+}
+
+.footer{
+  width: 100%;
+  height: 1.3rem;
+  text-align: center;
+  background: rgb(237, 177, 171);
+}
+
+.footer p {
+  /* padding-top: .2em; */
+  font: 13px "Roboto-regular";
+  color: white;
+  font-weight: bolder;
+}
